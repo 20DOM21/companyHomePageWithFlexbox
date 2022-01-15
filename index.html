@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <link href="style.css" type="text/css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      <title>Company Home Page with Flexbox</title>
+    </head>
+    <body>
+
+      <!-- Header-->
+
+      <header>      
+         <img src="./resources/images/logo-black.png" alt="O D Travel Logo">
+         <nav>
+            <a class="nav-center" href="#aboutUs">About Us</a>
+            <a class="nav-center" href="#holidays">Holidays</a>
+            <a class="nav-center" href="#ourTeam">Our Team</a>
+            <button><a href="#contactUs">Contact Us</a></button> 
+          </nav>       
+      </header>
+      
+      <!--Main-->
+
+      <main>
+
+        <!--About Us-->
+
+        <section id="aboutUs">
+          <video autoplay muted loop>
+            <source src="./resources/video/globe.mp4" type="video/mp4">
+          </video>
+          <div class="main-content">
+            <h1>We're a global travel company making unforgetable travels possible for over 20 years</h1>
+          </div>
+        </section>
+
+        <hr>
+        
+         <!--Holidays--> 
+        
+        <section id="holidays">
+          
+          <div class="sideMenu">
+            <div class="sideMenu-content">
+              <a href="#city-break">City breaks</a>
+              <a href="#beach">Beach</a>
+              <a href="#safari">Safari</a>
+              <a href="#ski">Ski</a>
+              <a href="#adventure">Adventure</a>
+            </div>
+            <div id="viewport">
+              <video autoplay muted loop>
+                <source src="./resources/video/happy.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+
+        <div class="main-menu">
+
+            <div id="city-break">
+              <div class="city-break">
+                <a href="#city-break"><img src="./resources/images/time-square-new-york.jpg" alt="Time Square, New York"></a>
+                <h2>New York</h2>
+              </div>
+              <div class="city-break">
+                <a href="#city-break"><img src="./resources/images/colloseum.jpg" alt="Colloseum, Rome"></a>
+                <h2>Rome</h2>
+              </div>  
+              <div id="sign"><h2>City breaks</h2></div>
+              <div class="city-break">
+                <a href="#city-break"><img src="./resources/images/lighted-eifel-tower.jpg" alt="Lighted Eifel Tower, Paris"></a>
+                <h2>Paris</h2>
+              </div>     
+              <div class="city-break">
+                 <a href="#city-break"><img src="./resources/images/hongKong.jpg" alt="Hong Kong"></a>
+                  <h2>Hong Kong</h2>
+              </div>
+            </div>
+            
+          
+         
+          <div id="beach">
+              <div id="boat">
+                <a href="#beach"><img src="./resources/images/beach1.jpg" alt="Beach"></a>
+              </div>
+              <div id="boat">
+                <a href="#beach"><img src="./resources/images/beach3.jpg" alt="Beach"></a>
+              </div>
+              <div id="palm-tree">
+                <a href="#beach"><img src="./resources/images/beach2.jpg" alt="Beach"></a>
+                 <h2>Sandy beaches</h2></div>
+              <div class="beach">
+                <a href="#beach">
+                <video autoplay muted loop>
+                  <source src="./resources/video/beach.mp4" type="video/mp4" width="5rem">
+                </video></a>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="holidays2">
+
+        <div id="container">
+          <div id="safari">
+              <div class="name">
+                  <a href="#safari"><h2>Safari</h2></a>
+              </div>
+              <div id="inner">
+                  <div id="small">
+                      <img src="resources/images/elefants.jpg" alt="Elephants">
+                      <img src="resources/images/giraffe.jpg" alt="Giraffe">
+                      <img src="resources/images/zebra.jpg" alt="Zebras">
+                  </div>
+                  <div id="big">
+                       <video autoplay muted loop>
+                          <source src="./resources/video/safari.mp4" type="video/mp4">
+                      </video>
+                  </div>
+               </div>
+        </div>
+
+
+        <div id="ski">            
+               <video autoplay muted loop>
+                  <source src="./resources/video/ski.mp4" type="video/mp4">
+               </video>  
+               <div class="name">
+                  <h2>We offer great deals <br> on the best ski resorts <br> in 2022</h2>
+               </div>
+                  <button>Book now</button>               
+        </div>
+
+
+        <div id="adventure">
+          
+           <div id="vid">
+               <div id="vid-containers">
+                  <div class="icon"><img src="./resources/images/adventure1.jpg" alt="Adventurer"></div>
+                  <div class="icon"><img src="./resources/images/adventure3.jpg" alt="Adventurer"></div>
+                  <div class="icon"><img src="./resources/images/snowmobile.jpg" alt="Snowmobile"></div>
+                  <div class="icon"><img src="./resources/images/wakeboarding.jpg" alt="Wakeboarding"></div>
+               </div>
+               <div id="hotAirBaloon">
+                <div class="icon"><img src="./resources/images/hotAirBaloon.jpg" alt="Snowmobile"></div>  
+               </div>
+           </div>           
+           <div class="name">
+               <h2> Unforgetable adventures</h2> 
+               <button>Book now</button>
+            </div>
+        </div>
+    </section>
+
+      <hr>
+      <br>
+      <hr>
+  
+    
+
+    <!--Meet Our Team-->
+
+    <section id="ourTeam">
+      <div id="team">
+          <h2> Meet Our Team </h2>
+      </div>
+      <div class="container">
+        <div><img src="./resources/images/christinaJohnson.jpg" alt="Picture of Christina Grant"><h3>Christina Grant</h3><p>Head of PR</p></div>
+        <div><img src="./resources/images/zahirNamane.jpg" alt="Picture of Zahir Namane"><h3>Zahir Namane</h3><p>Head of Sales</p></div>
+        <div><img src="./resources/images/christopherGrant.jpg" alt="Picture of Christoper Grant"><h3>Chritopher Grant</h3><p>CEO</p></div>            
+        <div><img src="./resources/images/yogendraSingh.jpg" alt="Picture of Yegendra Singh"><h3>Yegendra Singh</h3><p>Head of Marketing</p></div>
+        <div><img src="./resources/images/victoriaHeath.jpg" alt="Picture of Victoria Heath"><h3>Victoria Heath</h3><p>Head of Finance</p></div>         
+        <div><img src="./resources/images/robertMaynard.jpg" alt="Picture of Robert Maynard"><h3>Robert Maynard</h3><p>Head of IT</p></div>
+      </div>
+    </section>
+
+    <hr id="first">
+     <br>
+    <hr id="last">
+
+    <!--Contact Us-->
+
+    <section id="contactUs">
+      
+        <img id="logo" src="resources/images/logo-black.png" alt="Logo">
+      
+      <div id="address">
+     <address>
+        <span> OD Travel</span><br>
+         Northern Permimeter Road West,
+         Hounslow, Middlesex,
+         TW4 6AE          
+         <div id="email">customerservices@odtravel.com</div>
+         Reservations : 017846 2494 4569  
+      </address>      
+    
+      </div>
+   
+      <img id="social" src="resources/images/kindpng_44496.png">
+      
+    </section>
+    </main>
+
+      
+  <footer>
+     <hr>     
+     <p>&copy OD Travel, 2022</p>
+  </footer>
+
+    </body>
+
+</html>

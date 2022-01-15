@@ -1,0 +1,788 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: #090C0D;
+    opacity: 0.9;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;  
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+
+header {
+    height: 3.14rem;
+    border-top: 1px solid seashell;
+    border-bottom: 1px solid seashell;
+    border-width: 100%;
+    position: fixed;
+    width: 100%;
+    flex-flow: row wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    top: 0.5rem; 
+    z-index: 3;   
+}
+
+header img {
+    height: 2.8rem;
+    width: auto;
+    margin-left: 5%;
+}
+
+header a {
+    font-size: 1.2rem;
+    color: seashell;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 3%;
+}
+
+.nav-center {
+    padding-top: 0.30rem;
+}
+
+button {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1%;   
+}
+
+button a {
+    background: transparent;
+    color:  #090C0D;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+.mobile img {
+    height: 1.25rem;
+    width: auto;
+  }
+
+@media only screen and (min-width:1200px) and (max-width: 1399px) {
+    header {
+        height: 2.8rem; 
+        top: 0.3rem;  
+    }
+   
+    header img {
+        height: 2.5rem;
+    }
+    
+    header a {
+        font-size: 1rem;
+    }
+    
+    .nav-center {
+        padding-top: 0.20rem;
+    }
+}   
+
+@media only screen and (min-width:1000px) and (max-width: 1200px) {
+    header {
+        height: 2.8rem;
+        top: 0.3rem; 
+    }
+
+    header img {
+        height: 2.2rem;
+        margin-left: 4%;
+    }
+    
+    header a {
+        font-size: 1rem;
+    }
+    
+    .nav-center {
+        padding-top: 0.2rem;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width: 1000px){
+    header {
+        height: 2.4rem;
+        align-items: center;
+        justify-content: space-between; 
+        top: 0.5rem; 
+        z-index: 3;   
+    }
+    
+    header img {
+        height: 2rem;
+        margin-left: 3%;
+    }
+    
+    header a {
+        font-size: 1rem;    
+    }
+
+    nav {
+        display:flex;
+        justify-content: space-evenly;
+        margin-right: 0.8rem;
+        width: 70%;
+    } 
+
+    button a {
+        color:  #090C0D; 
+    } 
+}
+
+@media only screen and (min-width:500px) and (max-width: 800px){
+    nav {
+        margin-left: 2rem;
+        width:80%;
+    }
+    header a {
+        font-size: 0.8rem;
+    }
+    header img {
+        display: none;
+    }  
+    #inner #small {
+        display: flex;
+        max-width: 100%;
+        flex-flow: column wrap;
+        padding: 0 2% 0 0;
+    }
+    
+    #inner #big {
+        max-width: 100%;
+        margin:  2rem;
+        justify-items: center;
+    }  
+}
+
+@media only screen and (max-width: 500px){
+    header, nav, .nav-center {
+        border: none;
+        background: none;      
+    }
+    header img, .nav-center {
+        display: none;
+    }
+    button {
+        size: 85%;
+        margin-left: 1rem;
+        padding: 0.5rem;   
+    }
+}
+
+
+#aboutUs {  
+    display: grid; 
+    grid-template: repeat(4, 1fr) repeat(8, 1fr);
+    gap: 0;  
+}
+
+#aboutUs video {
+    grid-area: 1 / 1 / span 4 / span 8;
+}
+    
+#aboutUs .main-content {
+    grid-area: 3 / 2 / 4 / span 6; 
+    display: flex;
+    flex-flow: row wrap; 
+    flex-shrink: 2;
+    background: transparent;
+    z-index: 1;
+}
+
+#aboutUs .main-content h1 {    
+    color: white;
+    font-style: italic;
+    line-height: 3;
+    font-size: 2.4rem;    
+    font-weight: 800;
+    background: transparent;
+    text-align: left;
+}
+
+
+@media only screen and (min-width:1350px) and (max-width: 1480px) { 
+    #aboutUs .main-content h1 {
+        font-size: 2.2rem;
+        line-height: 3;
+    }
+}
+@media only screen and (min-width:1250px) and (max-width: 1350px) {
+    #aboutUs .main-content h1 {
+        font-size: 2rem;  
+        line-height: 3;
+    }
+}
+@media only screen and (min-width:1150px) and (max-width: 1250px) { 
+    #aboutUs .main-content h1 {
+        font-size: 1.8rem;
+        line-height: 3; 
+    }
+}
+@media only screen and (min-width:1000px) and (max-width: 1150px) {       
+    #aboutUs .main-content h1 {
+        font-size: 1.6rem;
+        line-height: 3; 
+    }
+}
+@media only screen and (min-width:870px) and (max-width: 1000px) {       
+    #aboutUs .main-content h1 {
+        font-size: 1.4rem;
+        line-height: 3;
+    }
+}
+@media only screen and (min-width:750px) and (max-width: 870px) {  
+    #aboutUs .main-content h1 {
+        font-size: 1.2rem;
+        line-height: 3.2;
+    }
+} 
+@media only screen and (min-width:550px) and (max-width: 750px) {  
+    #aboutUs .main-content h1 {
+        font-size: 1rem;
+        line-height: 3.4;  
+    }
+}
+@media only screen and (min-width:450px) and (max-width: 550px) {  
+    #aboutUs .main-content h1 {
+        font-size: 0.8rem;
+        line-height: 3.4;  
+    }
+}
+@media only screen and (max-width: 450px) {  
+    #aboutUs .main-content h1 {
+        display: none;
+    }
+}
+
+
+
+#holidays {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: flex-start;
+    margin: 1rem;  
+}
+
+
+.sideMenu {
+    position: sticky;
+    top: 3.5em;
+    margin-top: 0.5rem;
+    display: flex;
+    width: 30%;
+    min-height: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-between;    
+}
+
+.sideMenu-content {
+    display: flex;   
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: space-around;
+    justify-content: center;
+    letter-spacing: 0.3rem;
+    line-height: 1.8;
+    padding-bottom: 0.8rem;
+}
+
+.sideMenu-content a {
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#viewport {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border-style: solid;
+    border-color: white;
+}
+
+
+.main-menu {  
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding: 0.5rem;
+    width: 60%;    
+}
+
+
+#city-break, #beach {
+    display: inline-flex;
+    flex-flow: row wrap;
+    border: solid;
+    border-color: white;
+    max-width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+    align-content: space-between;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width:1100px) {
+    #city-break #sign {
+    display:none;
+    }
+}
+
+.city-break h2 {  
+    color: red;
+    padding: 0.5rem 0.2rem;  
+}
+
+.main-menu img:hover {
+    opacity: 0.6;
+    transform: scale(1.3);
+    transition: all .3s ease-in-out;
+    border: solid;
+    border-color: white;    
+}
+
+.main-menu #hongKong {
+    max-width: 100%;
+    height: auto;
+}
+
+#sign {
+    padding: 00.5rem;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 54rem;
+    right: 17.5rem;
+    z-index: 10;
+}
+
+#sign h2, #beach h2 {
+    color: seashell;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+}
+
+.beach h2 {  
+    padding: 1rem;
+    line-height: 1.6;
+    color: red;
+    background: transparent;
+}
+
+#boat img {
+    height: 9rem;
+}
+
+#beach video {
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width:1300px) {
+    #safari #inner #big {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    #sign, #ski .name, .sideMenu, #safari .name, #book button {
+        display: none;
+    }
+    #contanctUs {
+        justify-content: space-evenly;
+    }
+    .main-menu, #city-break, #beach {
+        max-width: 100%;
+    }
+    #adventure .name {
+        margin: 1rem;
+        padding-top: 1rem;   
+        display: flex;
+        flex-flow: column wrap;  
+    } 
+    body, #main-menu, #adventure, #beach {
+        margin: 0;
+        padding:0%;
+    }  
+}
+
+@media only screen and (max-width:400px) {
+    #beach #palm-tree h2 {
+        display: none;
+    }
+}
+
+#safari {
+    display: flex;
+    max-width: 70%;
+    flex-flow:column wrap;
+    border-color: white;
+    border-style: ridge;
+    margin: 0.2rem auto;
+}
+
+#inner {
+    display: inline-flex ;
+    flex-flow: row wrap;
+    margin: 0 0.3rem;
+    justify-items:center;
+    justify-content: center;
+    align-items: center;
+    max-width:100%;
+}
+
+#inner #small {
+    display: flex;
+    max-width: 40%;
+    flex-flow: column wrap;
+    padding: 0 2% 0 0;
+}
+
+#inner #big {
+    max-width: 60%;
+    margin:  2rem;
+    justify-items: center;
+} 
+
+.name {
+    align-items:baseline;
+    margin-top: 0.5rem;
+}
+
+#safari img {
+    width: auto;
+    padding: 0.5rem;
+}
+
+#safari h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.7rem;
+}
+
+
+#ski {
+    margin-top: 3rem;  
+    display:grid;
+    grid-template: repeat(8, 1fr) repeat(8, 1fr);
+    gap: 0;    
+}
+
+#ski video {
+    grid-area: 1 / 1 / span 8 / span 8;
+}
+
+#ski .name {  
+    grid-area: 2 / 4 / span 3 / span 5;
+    line-height: 1.6;  
+    background: transparent;   
+    z-index: 1;
+}
+
+#ski .name h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-right: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: right;
+    background: transparent;
+    text-shadow:-1px 1px 0 #000,
+                 1px 1px 0 #000,
+                 1px -1px 0 #000,
+                -1px -1px 0 #000;    
+}
+
+#ski button {    
+    grid-area: 6 / 5 / 7 / 8;
+    font-size: 1.1rem;
+    color: #090C0D;
+    background-color: white;
+    border: 0.05rem solid #090C0D ;
+    padding: 0.2rem;
+    z-index: 1;
+}
+
+
+
+
+#adventure {    
+    display: inline-flex;    
+    justify-items: space-around;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin: 1rem 0;    
+    width: 60rem;
+    align-items: center;
+}
+
+#vid {
+    display: flex;
+    flex-flow: column wrap;
+    border-color: white;
+    border-style: solid;
+    justify-content: space-evenly;    
+    padding: 0.5rem;    
+    align-content:space-around
+}
+
+#vid-containers {
+    display: inline-flex;    
+    justify-items: space-between; 
+}
+
+
+@media only screen and (max-width:800px) {
+    #holidays, .main-menu, #city-break, #beach, #holidays2, #container, #safari, #safari #inner, #inner #small,  #inner #big, #adventure, #vid, #vid-containers {
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 100%;
+        width: 100%;
+        margin: 0.1em 0;
+        padding: 0;
+    }
+
+    #inner #small img {
+        max-height: 100%;
+        width: auto;
+    }
+
+    .icon img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    
+    #city-break, #beach, #safari, #vid {
+        border: none;
+    }
+    #side-Menu {
+        display: none;
+    }
+    #adventure .name, #adventure .name h2 {
+        background: transparent;
+    }
+
+   
+    .city-break img, #boat img, #palm-tree img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .main-menu img:hover {
+        opacity: 1;
+        transform: none;
+        transition:none;
+    }   
+}
+
+#vid-containrs .icon {
+    max-height: 4.5rem;
+    max-width: 5.5rem;
+    overflow: hidden;
+}
+
+
+#adventure .name {
+    padding-top: 4rem; 
+    width: 15rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#adventure .name button {
+    margin: 4rem auto;
+    font-size: 1.1rem;
+    color:black;
+}
+
+@media only screen and (max-width:1160px) {
+    #adventure .name {
+        padding-top: 1rem; 
+        width: 15rem;
+        display: flex;
+        flex-flow: column wrap;
+    }
+        
+    #adventure .name button {
+        margin: 1rem auto;
+    }
+} 
+#adventure .name button:hover, #ski button:hover {
+        background-color: yellow;
+    }
+    
+#adventure .name button:active, #ski button:active {
+        background-color: yellow;
+        box-shadow: 0 5px rgb(54, 54, 54);
+        transform: translateY(5px);
+    }
+
+
+#adventure h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    line-height: 2rem;    
+    text-align: center;
+}
+
+
+
+#ourTeam {   
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1.5rem 1rem 3rem;
+    color: white;
+}
+
+#ourTeam h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+}
+
+#ourTeam h3 {
+    font-size: 1rem;
+}
+
+#ourTeam p {
+    font-size: 0.8rem;
+    color: lightslategray;   
+}
+
+.container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin-bottom: 2rem;
+    justify-content:space-evenly;
+}
+
+.container #together {
+    height: 16rem;
+    width: 11rem;
+    max-height: 100%;
+    display: flexbox;
+}
+
+.container div img {
+    max-height: 100%;
+    margin: 1rem;
+}
+
+@media only screen and (min-width:1200px) {
+    .container div {
+        height:10rem;
+        width: auto;
+    }
+    #ourTeam h3 {
+        font-size: 0.8rem;
+    }
+    
+    #ourTeam p {
+        font-size: 0.6rem;
+        color: lightslategray;   
+    }
+    
+}
+
+@media only screen and (min-width:1450px) {
+    .container div {
+        height: 14rem;
+        width: 10rem;
+    } 
+}
+
+#contactUs {
+    display:inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 1rem;
+    justify-items: space-around;
+}
+
+#logo {
+    padding: 3%;   
+}
+
+#first {
+    width: 40%;
+}
+
+#last {
+    width: 30%;
+    float:right;
+}
+
+#social{
+    width: 20%;
+    max-width: 60%;
+    padding: 3%;
+}
+
+#address {
+    max-width: 90%;
+    padding: 3%;
+    display: flex;
+}
+
+#address span {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+    text-shadow: 0.15rem 0.05rem rgb(79, 85, 85);
+}
+
+@media only screen and (max-width:1000px) {
+    #social {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    #social, #logo {
+        display: none;
+    }
+}  
+
+@media only screen and (max-width:800px) {
+    #social, #logo, #email {
+        display: none;
+    }
+    address, address span {
+        font-size: 0.8rem;
+    }
+    header button a{
+        font-size: 0.9rem;
+        max-width: 60%;
+    }
+} 
+
+footer p {
+    margin: 0.6rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
